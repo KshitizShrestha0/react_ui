@@ -1,0 +1,98 @@
+import React from "react";
+
+const Contact = () => {
+  return (
+    <div className="min-h-screen bg-slate-100 flex items-center justify-center px-4 py-12">
+      <div className="w-full max-w-3xl bg-white rounded-3xl shadow-xl ring-1 ring-slate-200 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-10 text-white">
+            <h1 className="text-3xl font-semibold mb-4">Contact Us</h1>
+            <p className="text-slate-100/90 mb-8">
+              Have a project idea, collaboration opportunity, or any questions?
+              Feel free to reach out using the form below. I'll get back to you
+              as soon as possible. Your message is important, and I look forward
+              to connecting with you.
+            </p>
+            <div className="space-y-6">
+              <div>
+                <p className="text-sm uppercase tracking-[0.3em] text-cyan-100/90">
+                  Email
+                </p>
+                <p className="mt-1 font-medium">shresthakshitiz102@gmail.com</p>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.3em] text-cyan-100/90">
+                  Phone
+                </p>
+                <p className="mt-1 font-medium">+977 9702291491</p>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.3em] text-cyan-100/90">
+                  Address
+                </p>
+                <p className="mt-1 font-medium">Nayabazar, kathmandu City</p>
+              </div>
+            </div>
+          </div>
+          <div className="p-8 md:p-10">
+            <form className="space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-slate-700"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  className="mt-2 block w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-cyan-500 focus:outline-none focus:ring-4 focus:ring-cyan-100"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-slate-700"
+                >
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  className="mt-2 block w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-cyan-500 focus:outline-none focus:ring-4 focus:ring-cyan-100"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-slate-700"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help?"
+                  className="mt-2 block w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-cyan-500 focus:outline-none focus:ring-4 focus:ring-cyan-100"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
